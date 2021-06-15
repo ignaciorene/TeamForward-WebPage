@@ -1,0 +1,240 @@
+/*colores*/
+/*
+Pantone 301 EC: rgb(0,91,150);
+Pantone 300 EC: rgb(0,112,186);
+Ppantone 321 EC: rgb(0,149,161);
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif !important;
+  color: #505962;
+  align-content: center;
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+}
+
+div{
+  overflow:hidden;
+}
+
+.offset:before{
+  height: 3.8rem;
+  margin-top: -3.8rem;
+  content: "";
+  display: block;
+}
+
+/*--Navbar--*/
+
+.navbar a{
+  color: white !important;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  background: transparent;
+}
+
+.navbar.solid {
+  background-color: rgba(255,255,255,0.9);
+  transition: background-color 1s ease 0s;
+}
+
+.navbar.solid a{
+  color: black !important;
+}
+
+.navbar-nav{
+  padding-right: .7rem;
+}
+
+.navbar-nav li{
+  padding-right: 2%;
+}
+
+.navbar-nav .navbar-link{
+  padding-top: .8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+  font-weight: 700;
+  color: rgb(0,91,150) !important;
+}
+
+/*--Carousel--*/
+
+#back{
+  background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+
+.carousel-item{
+  height: 100vh;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 42%;
+  text-transform: uppercase;
+}
+
+.carousel-caption h1{
+  color: rgb(0,112,186) !important;
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem
+  text-shadow: .2rem .2rem .8rem rgb(0,91,150);
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+.btn-lg:hover{
+  background-color: rgb(0,112,186)!important;
+  color: white !important;
+}
+
+/*--jumbotron--*/
+
+.heading{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(0,91,150);
+  padding-top: 3rem;
+  padding-bottom: 1.9rem;
+  font-size: 1.9rem;
+}
+
+.heading-underline{
+  width: 3rem;
+  height: .2rem;
+  background-color: rgb(0,149,161);
+  margin: 0 auto 2rem;
+}
+
+/*--Empresa--*/
+#logo-values{
+  text-align: center;
+  width: auto;
+}
+#logo-values img{
+  width: 100%;
+  height: auto;
+}
+
+#values{
+  text-align: left !important;
+}
+
+#values h4{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#values h4 strong{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(0,91,150);
+}
+
+/*--servicios--*/
+#servicios{
+  padding-bottom: 3rem;
+}
+
+.servicio{
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.servicio h4{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(0,112,186);
+  width: 100%;
+}
+
+.servicio h4 strong{
+  color: rgb(0,91,150);
+}
+
+.servicio-logo i{
+  font-size: 2rem;
+  color: rgb(0,149,161);
+}
+
+/*--contacto--*/
+
+footer{
+  background-color: rgb(0,112,186);
+  color: white;
+  padding: 2rem 0 3rem;
+  padding-top: 2rem;
+}
+
+footer img{
+  height: 7rem;
+  margin: 1.5rem 0;
+}
+
+footer a{
+  color: white;
+}
+
+footer i{
+  font-size: 2rem;
+  margin: 1.2rem .5rem 0 0;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: rgb(0,149,161);
+}
+
+hr.socket {
+  border-top: .2rem solid rgb(0,149,161);
+  width: 100%;
+}
+
+
+/*--Media queries--*/
+
+@media (max-width: 767px) {
+
+  .carousel-caption h1{
+    font-size: 2.3rem;
+    letter-spacing: .15rem
+    padding-bottom: .5rem;
+  }
+
+  .carousel-caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+}
